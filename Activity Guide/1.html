@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>ActivityGuide</title>
+  <meta name="description" content="ActivityGuide">
+  <meta name="viewport" content="width=device-width"> 
+
+
+
+    <!-- Bootstrap -->
+    <link href="app/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+    <body>
+      <div class="container-fluid" >
+
+             
+                <div class="row">
+                    <div id="header"class="well col-xs-12">
+                        Activity Ideas
+                    </div>
+                </div>
+                
+                  <hr>  
+                  <br>
+ 
+              </div>
+              <div class="row">
+                  <h1 id="Indoors" class="col-xs-1 col-xs-offset-2">Indoors</h1>
+                  <h1 id="Outdoors" class="col-xs-2 col-xs-offset-4">Outdoors</h1>
+              </div>
+
+                    <br>
+
+              <div class="row">
+                    <div class="col-xs-5 col-md-offset-0 jumbotron">
+                      
+                           <div class="row">
+                              <div class="col-md-1 col-md-offset-3">
+                                  <a class="btn btn-primary" id="GenerateIndoors">
+                                      Generate
+                                   </a>
+                             </div>
+                           </div>
+                           
+                           <hr>
+                           
+                           <div class="row well"id="resultIndoors"> 
+                            <hr>
+                            
+                            <h2 class="IndoorResponse"></h2>
+                            <hr> 
+                           </div>
+                    </div>
+              
+                    <div class="col-xs-5 col-md-offset-1 jumbotron">
+                         <div class="row">
+                              <div class="col-md-1 col-md-offset-3">
+                                  <a class="btn btn-primary" id="GenerateOutdoors">
+                                      Generate
+                                   </a>
+                             </div>
+                           </div>
+
+                           <hr>
+                           
+                           <div class="row well"id="resultOutdoors"> 
+                             
+                             <hr>
+
+                             <h2 class="OutdoorResponse"></h2>
+                           <hr>
+                           </div>
+                    </div>
+
+                </div>
+       </div> 
+             
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="app/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+      <script src="js/main.js"></script>
+
+    </body>
+</html>
+
+ 
+
+
+
+
+<!-- <body>
+  <div id="main">
+    <h1>You're ready to use Parse!</h1>
+
+    <p>Read the documentation and start building your JavaScript app:</p>
+
+    <ul>
+      <li><a href="https://www.parse.com/docs/js_guide">Parse JavaScript Guide</a></li>
+      <li><a href="https://www.parse.com/docs/js">Parse JavaScript API Documentation</a></li>
+    </ul>
+
+    <div style="display:none" class="error">
+      Looks like there was a problem saving the test object. Make sure you've set your application ID and javascript key correctly in the call to <code>Parse.initialize</code> in this file.
+    </div>
+
+    <div style="display:none" class="success">
+      <p>We've also just created your first object using the following code:</p>
+      
+        <code>
+          var TestObject = Parse.Object.extend("TestObject");<br/>
+          var testObject = new TestObject();<br/>
+          testObject.save({foo: "bar"});
+        </code>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    Parse.initialize("vrVmUVyBMfCesVL17WeEynZ3KyOqPVsmwZnLv8DS", "jSKDIX0l6CxlTDlta0fkGlYroCnCWkNZ2mQbf1Ug");
+    
+    var TestObject = Parse.Object.extend("TestObject");
+    var testObject = new TestObject();
+      testObject.save({foo: "bar"}, {
+      success: function(object) {
+        $(".success").show();
+      },
+      error: function(model, error) {
+        $(".error").show();
+      }
+    });
+  </script>
+</body>
+ -->
+</html>
